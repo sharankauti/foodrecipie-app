@@ -1,0 +1,8 @@
+.RecipieWrap{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto auto;
+    margin: 50px 0px;
+}

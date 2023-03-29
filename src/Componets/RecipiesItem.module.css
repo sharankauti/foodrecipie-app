@@ -1,0 +1,76 @@
+.RecipieData{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.5s all;
+}
+.RecipieData:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.00000009999999);
+}
+.RecipieData p{
+    font-size: 16px;
+    font-family: system-ui;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #000000;
+}
+
+.instructionText{
+    line-height: 1.4;
+    color: #000000;
+    min-height: 90px;
+    max-height: 90px;
+    display: block!important;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    -ms-line-clamp: 4;
+    -o-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mealThumb{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.moreInfoText{
+    font-size: 16px;
+    font-family: monospace;
+    color: #cc6600;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    position: relative;
+}
+.moreInfoText::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cc6600;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.moreInfoText:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.moreInfoText:hover {
+    color: #cc6600;
+    text-decoration: none;
+}
